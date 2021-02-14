@@ -1,0 +1,421 @@
+body{
+  overflow-x: hidden;
+  
+}
+
+.section.header{
+  height: 530px;
+  position: relative;
+  color: #000;
+  font-size: 17px;
+  left: 0;
+}
+
+.section.header .background {
+  position: absolute;
+  width: 100%;
+  top: -10vh;
+  left: 0;
+  height: calc(85% + 10vh);
+  top: -10vh;
+  background: linear-gradient(135deg, #d69d00, #d8ba73);
+  transform: skewY(-2.5deg);
+  box-shadow: 0 0 50px rgb(60 117 162 / 40%);
+}
+
+.contain {
+  position: absolute;
+  width: 100%;
+
+}
+
+.contain .tittle-head{
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 90px 0 0 50px;
+  color: #fff;
+}
+
+.contain h1{
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left:50px;
+  color: #fff;
+}
+
+
+.contain .button{
+  text-decoration: none;
+  color: #29576C;
+  background: transparent;
+  margin: 30px 0 0 50px;  
+  padding: 8px;
+  border: solid #29576C;
+  border-radius: 10px;
+}
+
+.contain .button:hover{
+  background: #29576C;
+  color: white;
+  transition: 0.3s;
+}
+
+
+.image-header #ilustration{
+  position: absolute;
+  max-width: 200px;
+  margin: 60px auto 0 700px;
+  animation-name: ilustrate ;
+  animation-duration: 1.6s;
+}
+
+@keyframes ilustrate{
+  from{
+opacity: 0; 
+  }
+  to{
+opacity: 1;
+  }
+}
+
+.conten-type{
+  margin-left:50px;
+}
+.writing{
+  font-family: 'Source Code Pro', monospace;
+  color:#29576C ;
+  font-size: 20px;
+  font-style: normal;
+}
+
+/*----------- Content aboout me------------------------*/
+.about{
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+.image{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image img{
+  max-width: 300px;
+  border-radius: 500px;
+  border: solid 3px #E5B317;
+}
+
+.me{
+  margin-bottom: 100px;
+  padding: 15px;
+}
+
+.mee{
+  margin-bottom: 100px;
+}
+
+
+/*-------- Content projects------------*/
+.section.contain{
+  height: 530px;
+  position: relative;
+  color: #000;
+  font-size: 17px;
+  left: 0;
+}
+
+.section.contain .background {
+  position: absolute;
+  width: 100%;
+  top: -10vh;
+  left: 0;
+  height: calc(85% + 10vh);
+  top: -10vh;
+  background: linear-gradient(135deg, #d69d00, #d8ba73);
+  transform: skewY(-2.5deg);
+  box-shadow: 0 0 50px rgb(60 117 162 / 40%);
+}
+
+.img-contain img{
+  max-width: 550px;
+  margin:20px 0 0 45px;
+  box-shadow:  -5px 5px 20px #29576C;
+  border-radius: 10px;
+
+}
+
+.tittleBlue{
+  color: #29576C;
+}
+
+.contain2-projects {
+  position: absolute;
+  width: 100%;
+  margin-left: 700px;
+  justify-content: left;
+
+}
+
+.button2{
+  text-decoration: none;
+  color: #E5B317;
+  background: transparent;  
+  padding: 8px;
+  border: solid #E5B317;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.button2:hover{
+  background: #E5B317;
+  color: #29576C;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+/*-------------------- contacto ------------------*/
+
+.containContact{
+  text-align: center;
+}
+
+.icons{
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+.instagram:hover{
+  color:#d69d00 ;
+  transition: 0.3s;
+}
+
+.linkedin:hover{
+  color:#d69d00 ;
+  transition: 0.3s;
+}
+
+.github:hover{
+  color:#d69d00 ;
+  transition: 0.3s;
+}
+
+.mail:hover{
+  color:#d69d00 ;
+  transition: 0.3s;
+}
+
+
+
+/*---------media querys-------------*/
+
+@media (max-width: 1920px) {
+  section.header {
+    height: 630px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 1500px;
+  }
+}
+
+@media (max-width: 1850px) {
+  section.header {
+    height: 630px;
+  }
+  .image-header #ilustration{
+    margin-left: 1400px;
+  }
+}
+
+@media (max-width: 1800px) {
+  section.header {
+    height: 630px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 1300px;
+  }
+}
+
+@media (max-width: 1720px) {
+  section.header {
+    height: 630px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 1200px;
+  }
+}
+
+@media (max-width: 1690px) {
+  section.header {
+    height: 780px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 1100px;
+  }
+}
+
+@media (max-width: 1600px) {
+  section.header {
+    height: 750px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 950px;
+  }
+}
+
+
+@media (max-width: 1450px) {
+  .image-header #ilustration{
+    margin-left: 1000px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .image-header #ilustration{
+    margin-left: 900px;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.header {
+    height: 500px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 820px;
+  }
+}
+
+@media (max-width: 1050px) {
+  section.header {
+    height: 600px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 700px;
+  }
+}
+
+@media (max-width: 960px) {
+  section.header {
+    height: 600px;
+  }
+
+  .image-header #ilustration{
+    margin-left: 650px;
+  }
+}
+
+@media (max-width: 959px) {
+  section.header {
+    height: 600px;
+  }
+
+  .image-header #ilustration{
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  section.header {
+    height: 600px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 580px) {
+  section.header {
+    height: 600px;
+    font-size: 15px;
+  }
+
+  .image-header #ilustration{
+    display: none;
+  }
+
+  .img-contain img{
+    max-width: 400px;
+    margin:-40px 0 0 45px;
+    box-shadow:  -5px 5px 20px #29576C;
+    border-radius: 10px;
+  
+  }
+
+  .section.contain{
+    height: 700px;
+  }
+
+  .me{
+    margin-bottom: 400px;
+  }
+
+  .contain2-projects{
+    margin-left: 25px;
+    margin-top: 220px !important;
+    padding: 0;
+
+  }
+
+  .mee .about{
+    padding: 0 60px;
+    
+  }
+
+  .text-responsive-latin{
+    padding-right: 75px;
+  }
+
+
+}
+@media (max-width: 440px) {
+  section.header {
+    font-size: 14px;
+  }
+  .image-header #ilustration{
+    display: none;
+  }
+
+  .img-contain img{
+    max-width: 350px;
+    margin:-40px 0 0 35px;
+    box-shadow:  -5px 5px 20px #29576C;
+    border-radius: 10px;
+  
+  }
+
+  .latin{
+    margin-left: -10px;
+  }
+
+  .text-responsive-latin{
+    padding-right: 75px;
+  }
+
+  .resposnive-text{
+    padding: 0 18px 0 18px;
+  }
+
+  .button{
+    margin-left: 50px !important;
+  }
+
+  .contain2-projects{
+    margin-top: 200px !important;
+
+  }
+
+  .section.contain{
+    height: 700px;
+  }
+
+  .containContact{
+    margin-top: -70px !important;
+  }
+
+
+}
+
+
