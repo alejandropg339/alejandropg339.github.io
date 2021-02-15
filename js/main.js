@@ -1,3 +1,6 @@
+
+// ------ TYPEDJS -----------
+
 const typed = new Typed('.typed', {
     strings: [
         '<i class="writing">Desarollador Web</i>',
@@ -12,6 +15,8 @@ const typed = new Typed('.typed', {
     contentType: 'html' // Es el formato en el que aparecera lo que se dijite si se pone null mostrara las etiquetas que se coloquen en htmls
 });
 
+//-------- GSAP ANIMATIONS -------------
+
 gsap.to('#ilustration', { 
      duration: 2,
      ease: "sine.out",
@@ -20,3 +25,15 @@ gsap.to('#ilustration', {
      yoyo:true,
      }
      );
+
+//-----------  NATIVE JS ------------------
+const nav = document.querySelector('#hamburguer button');
+const menu = document.querySelector('#menu-contains');
+const colapsed = document.querySelector(' #menu-contains li');
+
+nav.addEventListener('click', e =>{
+    nav.classList.toggle('open');
+    menu.classList.toggle('expanded-menu');
+    colapsed.classList.toggle('visible');
+});
+
