@@ -30,6 +30,10 @@ gsap.to('#ilustration', {
 const nav = document.querySelector('#hamburguer button');
 const menu = document.querySelector('#menu-contains');
 const colapsed = document.querySelector(' #menu-contains li');
+const inicio = document.querySelector('#mehead');
+const me = document.querySelector('#meabout');
+const projects = document.querySelector('#meporjects');
+const contact = document.querySelector('#mecontact');
 
 nav.addEventListener('click', e =>{
     nav.classList.toggle('open');
@@ -37,3 +41,26 @@ nav.addEventListener('click', e =>{
     colapsed.classList.toggle('visible');
 });
 
+inicio.onclick= ()=>{
+    nav.classList.toggle('open');
+    menu.classList.toggle('expanded-menu');
+    colapsed.classList.toggle('visible');
+}
+
+me.onclick = ()=>{
+    nav.classList.toggle('open');
+    menu.classList.toggle('expanded-menu');
+    colapsed.classList.toggle('visible');
+}
+
+projects.onclick = ()=>{
+    nav.classList.toggle('open');
+    menu.classList.toggle('expanded-menu');
+    colapsed.classList.toggle('visible');
+}
+
+contact.onclick = () =>{
+    nav.classList.toggle('open');
+    menu.classList.toggle('expanded-menu');
+    colapsed.classList.toggle('visible');
+}

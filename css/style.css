@@ -7,6 +7,7 @@
   font: inherit;
   vertical-align: baseline;
   max-width: calc(100% + 10vh);
+  font-family: 'Comfortaa', cursive;
 }
 body{
   overflow-x: hidden;
@@ -126,7 +127,7 @@ height: 60px;
   animation-name: bottom-line-animation-close;
 }
 .section.header{
-  /*height: 530px;*/
+  height: 900px;
   position: relative;
   color: #000;
   font-size: 17px;
@@ -140,7 +141,7 @@ height: 60px;
   left: 0;
   height: calc(85% + 10vh);
   top: -10vh;
-  background: linear-gradient(135deg, #d69d00, #d8ba73);
+  background: linear-gradient(135deg, #fb9637, #d8ba73);
   transform: skewY(-2.5deg);
   box-shadow: 0 0 50px rgb(60 117 162 / 40%);
 }
@@ -149,6 +150,10 @@ height: 60px;
   position: absolute;
   width: 100%;
 
+}
+
+.head{
+  margin: 10% 0 0 6%;
 }
 
 .contain .tittle-head{
@@ -174,6 +179,7 @@ height: 60px;
   padding: 8px;
   border: solid #29576C;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .contain .button:hover{
@@ -185,8 +191,8 @@ height: 60px;
 
 .image-header #ilustration{
   position: absolute;
-  max-width: 200px;
-  margin: 60px auto 0 700px;
+  max-width: 280px;
+  margin: 13% auto 0 65%;
   animation-name: ilustrate ;
   animation-duration: 1.6s;
 }
@@ -207,7 +213,7 @@ opacity: 1;
 .writing{
   font-family: 'Source Code Pro', monospace;
   color:#29576C ;
-  font-size: 20px;
+  font-size: 27px;
   font-style: normal;
 }
 
@@ -221,6 +227,18 @@ opacity: 1;
 
 .flex-group img{
   max-width: 54px;
+}
+
+.flex-projects{
+  display: flex;
+  max-width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:5% ;
+}
+
+.flex-projects img{
+  max-width: 43px;
 }
 /*----------- Content aboout me------------------------*/
 .about{
@@ -245,17 +263,27 @@ opacity: 1;
 }
 
 .mee{
+  margin-top: 6% !important;
   margin-bottom: 100px;
 }
 
+.about h3{
+  margin-top: 90px;
+}
+
+.about h2{
+  font-weight: 600;
+  font-size: 40px;
+}
 
 /*-------- Content projects------------*/
 .section.contain{
-  height: 530px;
+  height: 810px;
   position: relative;
   color: #000;
   font-size: 17px;
   left: 0;
+  margin-top: 15%;
 }
 
 .section.contain .background {
@@ -265,14 +293,14 @@ opacity: 1;
   left: 0;
   height: calc(85% + 10vh);
   top: -10vh;
-  background: linear-gradient(135deg, #d69d00, #d8ba73);
+  background: linear-gradient(135deg, #fb9637, #d8ba73);
   transform: skewY(-2.5deg);
   box-shadow: 0 0 50px rgb(60 117 162 / 40%);
 }
 
 .img-contain img{
-  max-width: 550px;
-  margin:20px 0 0 45px;
+  max-width: 650px;
+  margin:12% 0 0 10%;
   box-shadow:  -5px 5px 20px #29576C;
   border-radius: 10px;
 
@@ -280,12 +308,15 @@ opacity: 1;
 
 .tittleBlue{
   color: #29576C;
+  font-weight: 600;
+  font-size: 37px;
 }
 
 .contain2-projects {
   position: absolute;
   width: 100%;
-  margin-left: 700px;
+  margin-left: 60%;
+  margin-top: 10% !important;
   justify-content: left;
 
 }
@@ -307,7 +338,14 @@ opacity: 1;
   transition: 0.3s;
 }
 
+.carb{
+  margin-top: 5% !important;
+}
 
+.latext h2{
+  font-weight: 600;
+  font-size: 30px;
+}
 /*-------------------- contacto ------------------*/
 
 .containContact{
@@ -348,8 +386,12 @@ opacity: 1;
 color: #d69d00;
 }
 
-/*---------media querys-------------*/
+.contacto{
+  font-weight: 600;
+}
 
+/*---------media querys-------------*/
+/*
 @media (max-width: 3048px) {
   section.header {
     height: 630px;
@@ -432,8 +474,9 @@ color: #d69d00;
     margin-left: 900px;
   }
 }
+*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1260px) {
   section.header {
     height: 1000px;
   }
@@ -461,11 +504,13 @@ color: #d69d00;
 
   .contain2-projects{
     margin-top: 13% !important;
+    margin-left: 60% !important;
   }
 
   .img-contain img{
     max-width: 80%;
     margin-top: 18%;
+    width: 550px;
   
   }
 
@@ -489,6 +534,7 @@ color: #d69d00;
   .latext{
     margin-top: 7% !important;
   }
+
 }
 
 @media (max-width: 1050px) {
@@ -500,6 +546,11 @@ color: #d69d00;
   height: calc(90% + 10vh);
   }
 
+  .contain.head{
+    margin-top: 20% !important;
+    margin-left: 5%;
+  }
+
   .image-header #ilustration{
     margin-left: 600px;
     margin-top: 25%;
@@ -507,12 +558,18 @@ color: #d69d00;
   }
 
   .contain{
-    margin-top: 20%;
+    margin-top: 3% !important;
   }
 
-  .carb{
-    margin-top: 30%;
+  .about{
+    padding-top: 0;
   }
+
+  .about h3{ 
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
 
   .section.contain{
     height: 850px;
@@ -535,16 +592,30 @@ color: #d69d00;
     margin-bottom: 20%;
   }
 
+  .carb{
+    margin-top: 20% !important;
+  }
 
+  .latin{
+    padding-top: 3%;
+  }
+
+.contain2-projects.latext{
+margin-top: 28% !important;
+}
 /*  .latin{
     margin-left: -10%;
   }*/
 
   .contain2-projects{
     max-width: 70%;
-    margin-top: 40% !important;
-    margin-left: 13%;
+    margin-top: 35% !important;
+    margin-left: 9% !important;
 
+  }
+
+  .resposnive-text{
+    width: 80%;
   }
 
   .text-responsive-latin{
@@ -555,7 +626,9 @@ color: #d69d00;
     margin-top: -8% !important;
   }
 
-
+  .col-lg-4{
+    width: 100% !important;
+  }
 
 }
 
@@ -574,20 +647,6 @@ color: #d69d00;
 
 }
 
-@media (max-width: 959px) {
-  section.header {
-    height: 600px;
-  }
-
-  .image-header #ilustration{
-    display: none;
-  }
-
-  .mee{
-    margin-top: -10% !important;
-  }
-
-}
 @media (max-width: 720px) {
   section.header {
     height: 600px;
@@ -656,6 +715,10 @@ color: #d69d00;
     height: 700px;
   }
 
+  .text-responsive-latin h2{
+    padding-right: 10px;
+  }
+
   .me{
     margin-bottom: 400px;
   }
@@ -684,6 +747,7 @@ color: #d69d00;
 @media (max-width: 440px) {
   section.header {
     font-size: 14px;
+    height: 700px !important;
   }
   .image-header #ilustration{
     display: none;
@@ -697,21 +761,23 @@ color: #d69d00;
   
   }
 
+  .image{
+    padding-top: 0;
+  }
+
   .latin{
     margin-left: -10px;
   }
 
   .text-responsive-latin{
-    padding-right: 75px;
+    padding-right: 10px;
   }
+
 
   .resposnive-text{
     padding: 0 18px 0 18px;
   }
 
-  .button{
-    margin-left: 50px !important;
-  }
 
   .contain2-projects{
     margin-top: 200px !important;
@@ -719,7 +785,7 @@ color: #d69d00;
   }
 
   .section.contain{
-    height: 700px;
+    height: 950px;
   }
 
   .containContact{
@@ -728,6 +794,35 @@ color: #d69d00;
 
   .carb{
     margin-top: 20%;
+  }
+
+  .contain2-projects.latext{
+     margin-top: 45% !important;
+  }
+
+  .flex-projects{
+    margin-top: 0;
+    margin-left: 15px;
+  }
+
+  .about h2{
+    font-size: 33px;
+  }
+
+  .tittleBlue{
+    font-size: 33px;
+  }
+
+  .latext h2{
+    font-size: 30px;
+  }
+
+  .contain h1{
+    font-size: 30px;
+  }
+
+  .writing{
+    font-size: 20px;
   }
 
 }

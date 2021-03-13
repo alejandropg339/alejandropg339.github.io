@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb42ca2408.js" crossorigin="anonymous"></script>
     <title>Alejandro Padilla</title>
 </head>
@@ -20,10 +23,10 @@
             <div class="background"></div>
             <div id="menu-contains">
                 <li id="colapsed" class="oculted">
-                    <ol><a href="#">Inicio</a></ol>
-                    <ol><a href="#">Sobre mi</a></ol>
-                    <ol><a href="#">Proyectos</a></ol>
-                    <ol><a href="#">Contáctame</a></ol>
+                    <ol><a href="#header" id="mehead">Inicio</a></ol>
+                    <ol><a href="#aboutme" id="meabout">Sobre mi</a></ol>
+                    <ol><a href="#projects" id="meporjects">Proyectos</a></ol>
+                    <ol><a href="#contactme" id="mecontact">Contáctame</a></ol>
 
                 </li>
                 <div id="hamburguer">
@@ -44,7 +47,7 @@
                             <span class="typed"></span>
                         </div>
                         <br>
-                        <a href="#" class="button">Más sobre mi</a>
+                        <a href="#" class="button r">Más sobre mi</a>
                     </div>
                 </div>
                 <div class="col-md4 image-header">
@@ -52,16 +55,10 @@
                 </div>
             </div>
         </section>
-        <div class="row mee">
+        <div class="row mee" id="aboutme">
             <div class="col-lg-8 text-white about px-sm-5">
                 <h2>Sobre mí</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magnam porro quos, iusto vitae
-                    quaerat reprehenderit illo animi amet totam unde laborum, quam nulla quod accusamus nesciunt autem
-                    et iste.
-                    Quod nobis sequi repellendus, recusandae deserunt rem voluptates facere laboriosam ad impedit ea
-                    natus qui corporis deleniti totam hic possimus labore vel atque voluptatem eveniet quasi quibusdam
-                    obcaecati. Iusto, itaque.
-                    Assumenda porro, nobis enim deleniti doloribus ratione.</p>
+                <p>Soy Alejandro Padilla actualmente estudiante de ingeniería de sistemas y apasionado por el desarrollo de software, principalmente el desarrollo web, amante de los retos que me periten reforzar y estudiar nuevas tecnologías para realizar software de excelente calidad. Soy de Colombia y actualmente resido en la ciudad de Bogotá.</p>
                 <h3>Tecnologías</h3>
                 <div class="flex-group">
                     <img src="images/html5.svg" alt="html" title="HTML 5">
@@ -77,23 +74,24 @@
             </div>
         </div>
         <section class="section contain">
-            <div class="background"></div>
+            <div class="background" id="projects"></div>
             <div class="row my-5">
                 <div class="col-sm-12 col-lg-8 img-contain contain">
                     <img src="images/omvet.png" alt="Omvet PetBoutique">
                 </div>
                 <div class="col-sm-12 col-lg-4 text-white contain2-projects">
                     <h2 class="tittleBlue resposnive-text">Omvet PetBoutique</h2>
-                    <p class="resposnive-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        ipsum saepe temporibus
-                        dolorem nemo aliquam expedita voluptatibus animi quis qui repellat recusandae mollitia omnis
-                        aperiam
-                        explicabo enim, pariatur suscipit deserunt?</p>
+                    <p class="resposnive-text">Omvet es una tienda online que ofrece productos para mascotas, fue mi primer proyecto en el cual utilice diferentes plugins de wordpress como elementor y woocomerce para su elaboración por otra parte utilice un poco de php para modificar algunos aspectos requeridos por el cliente.</p>
                     <span class="resposnive-text">
-                        incons de tecnologias
+                        <div class="flex-projects">
+                            <img src="images/html5.svg" alt="html" title="HTML 5">
+                            <img src="images/css-3.svg" alt="css" title="CSS 3">
+                            <img src="images/wordpress.svg" alt="wordpress" title="Wordpress">
+                            <img src="images/php-1-logo.svg" alt="php" title="PHP">
+                        </div>
                     </span>
                     <br><br>
-                    <a href="#" class="button" style="margin: 0;">VER SITIO</a>
+                    <a href="https://omvet.xyz/" target="_blank" class="button" style="margin: 0;">VER SITIO</a>
                 </div>
 
             </div>
@@ -104,16 +102,17 @@
                 <img src="images/latincarb.png" alt="LatinCarb">
             </div>
             <div class="col-sm-12 col-lg-4 text-white contain2-projects latext">
-                <h2>Latinoamericana de carbón</h2>
-                <p class="text-responsive-latin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                    ipsum saepe temporibus
-                    dolorem nemo aliquam expedita voluptatibus animi quis qui repellat recusandae mollitia omnis aperiam
-                    explicabo enim, pariatur suscipit deserunt?</p>
+                <h2 class="text-responsive-latin">Latinoamericana de carbón</h2>
+                <p class="text-responsive-latin">Para esta empresa desarrollé una aplicación web que ayuda a tener un control sobre los servicios que prestan, a que usuarios se le prestan dichos servicios, además de genera informes, entre más funcionalidades, esta aplicación es usada principalmente en dispositivos móviles, cuenta con roles y es usada diariamente por los miembros de dicha organización.</p>
                 <span>
-                    incons de tecnologias
+                    <div class="flex-projects">
+                        <img src="images/html5.svg" alt="html" title="HTML 5">
+                        <img src="images/css-3.svg" alt="css" title="CSS 3">
+                        <img src="images/php-1-logo.svg" alt="php" title="PHP">
+                    </div>
                 </span>
                 <br><br>
-                <a href="#" class="button2">VER SITIO</a>
+                <a href="https://latincarb.com/" target="_blank" class="button2">VER SITIO</a>
             </div>
 
         </div>
@@ -124,32 +123,37 @@
             <div class="background"></div>
             <div class="row">
                 <div class="col-sm-12 col-lg-8 img-contain contain">
-                    <img src="images/pandemialma.png" alt="Omvet PetBoutique">
+                    <img src="images/portafolio.png" alt="Alejandro Padilla">
                 </div>
                 <div class="col-sm-12 col-lg-4 text-white contain2-projects">
-                    <h2 class="tittleBlue resposnive-text">Libro pandemialma</h2>
-                    <p class="resposnive-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
-                        ipsum saepe temporibus
-                        dolorem nemo aliquam expedita voluptatibus animi quis qui repellat recusandae mollitia omnis
-                        aperiam
-                        explicabo enim, pariatur suscipit deserunt?</p>
+                    <h2 class="tittleBlue resposnive-text">Portafolio</h2>
+                    <p class="resposnive-text">Es mi más reciente proyecto, sin embargo, en mi repositorio de Github puedes encontrar los proyectos en los que me encuentro trabajando actualmente. En este proyecto utilice diferentes tecnologías y trate de cuidar mucho los detalles para que los que lo visiten tengan una agradable experiencia.</p>
                     <span class="resposnive-text">
-                        incons de tecnologias
+                        <div class="flex-projects">
+                            <img src="images/html5.svg" alt="html" title="HTML 5">
+                            <img src="images/css-3.svg" alt="css" title="CSS 3">
+                            <img src="images/javascript-logo.svg" alt="jvascript" title="Javascript">
+                            <img src="images/bootstrap-4.svg" alt="bootstrap" title="Bootstrap">
+                        </div>
                     </span>
                     <br><br>
                     <a href="#" class="button" style="margin:0">VER SITIO</a>
                 </div>
             </div>
         </section>
-        <div class="containContact">
+        <div class="containContact" id="contactme">
             <div class="row contact">
                 <div class="col text-white">
-                    <h3>Contáctame</h3>
+                    <h3 class="contacto">Contáctame</h3>
                     <div class="icons">
-                       <a href="https://www.linkedin.com/in/alejandro-padilla-guevara-31a445165/"  target="_blank" class="redes"><i class="fab fa-linkedin linkedin"></i></a>
-                        <a href="https://www.instagram.com/alejandro339/"  target="_blank" class="redes"><i class="fab fa-instagram-square instagram"></i></a>
-                        <a href="https://github.com/alejandropg339"  target="_blank" class="redes"><i class="fab fa-github-square github"></i></a>
-                        <a href="mailto:aljeandropg339@gmail.com"  target="_blank" class="redes"><i class="fas fa-envelope-square mail"></i></a>
+                        <a href="https://www.linkedin.com/in/alejandro-padilla-guevara-31a445165/" target="_blank"
+                            class="redes"><i class="fab fa-linkedin linkedin"></i></a>
+                        <a href="https://www.instagram.com/alejandro339/" target="_blank" class="redes"><i
+                                class="fab fa-instagram-square instagram"></i></a>
+                        <a href="https://github.com/alejandropg339" target="_blank" class="redes"><i
+                                class="fab fa-github-square github"></i></a>
+                        <a href="mailto:aljeandropg339@gmail.com" target="_blank" class="redes"><i
+                                class="fas fa-envelope-square mail"></i></a>
                     </div>
                 </div>
             </div>
