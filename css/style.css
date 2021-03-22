@@ -639,10 +639,24 @@ margin-top: 28% !important;
 
   .image-header #ilustration{
     margin-left: 650px;
+    display: none;
   }
 
   .mee{
     margin-top: -10%;
+  }
+
+  .button2{
+    margin-bottom: 28%;
+  }
+
+  .carb{
+    margin-top: 30% !important;
+  }
+
+  .contain.head{
+    margin-top: 20% !important;
+    margin-left: 0;
   }
 
 }
@@ -755,7 +769,7 @@ margin-top: 28% !important;
 
   .img-contain img{
     max-width: 350px;
-    margin:-40px 0 0 35px;
+    margin:-40px 0 0 8%;
     box-shadow:  -5px 5px 20px #29576C;
     border-radius: 10px;
   
